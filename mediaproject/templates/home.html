@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <img src="{{post.img.url}}">
+        </div>
+
+   <div class="col-md-6">
+
+       <h4>{{post_desc}}</h4>
+       <h5>{{date_created}}</h5>
+
+
+        <a class="btn btn-warning" href="#">Like</a>
+        <a class="btn btn-danger" href="#">Comment</a>
+        </div>
+        </div>
+</div>
+{% endblock %}
